@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="5" result="Passed" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="5" engine-version="3.11.1.0" clr-version="4.0.30319.42000" start-time="2020-07-19 09:59:18Z" end-time="2020-07-19 10:00:02Z" duration="43.513504">
+  <command-line><![CDATA[nunit3-console.exe  C:\Users\GermánLinares\source\repos\GEAUITests\bin\Debug\GEAUITests.dll]]></command-line>
+  <test-suite type="Assembly" id="0-1006" name="GEAUITests.dll" fullname="C:\Users\GermánLinares\source\repos\GEAUITests\bin\Debug\GEAUITests.dll" runstate="Runnable" testcasecount="5" result="Passed" start-time="2020-07-19 09:59:19Z" end-time="2020-07-19 10:00:02Z" duration="42.948292" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+    <environment framework-version="3.12.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.18363.0" platform="Win32NT" cwd="C:\Users\GermánLinares\source\repos\GEAUITests\packages\NUnit.ConsoleRunner.3.11.1\tools" machine-name="8CC7J33" user="GermánLinares" user-domain="AzureAD" culture="es-ES" uiculture="es-ES" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\GermánLinares\source\repos\GEAUITests\packages\NUnit.ConsoleRunner.3.11.1\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="RuntimeFramework" value="net-4.0" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="8324" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <test-suite type="TestSuite" id="0-1007" name="GEAUITests" fullname="GEAUITests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2020-07-19 09:59:19Z" end-time="2020-07-19 10:00:02Z" duration="42.933642" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+      <test-suite type="TestFixture" id="0-1000" name="Test" fullname="GEAUITests.Test" classname="GEAUITests.Test" runstate="Runnable" testcasecount="5" result="Passed" start-time="2020-07-19 09:59:19Z" end-time="2020-07-19 10:00:02Z" duration="42.929903" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+        <test-case id="0-1001" name="SeachBoxTest" fullname="GEAUITests.Test.SeachBoxTest" methodname="SeachBoxTest" classname="GEAUITests.Test" runstate="Runnable" seed="1978505351" result="Passed" start-time="2020-07-19 09:59:52Z" end-time="2020-07-19 09:59:56Z" duration="4.194503" asserts="1">
+          <properties>
+            <property name="Category" value="Functional Testing" />
+            <property name="Description" value="After hitting 3 or more letters, the list of address suggestions appears. After selecting one of them, a new tab is opened with the general map url" />
+            <property name="Order" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="0-1002" name="MyActiveJobsSectionTest1" fullname="GEAUITests.Test.MyActiveJobsSectionTest1" methodname="MyActiveJobsSectionTest1" classname="GEAUITests.Test" runstate="Runnable" seed="1952886511" result="Passed" start-time="2020-07-19 09:59:56Z" end-time="2020-07-19 09:59:56Z" duration="0.087999" asserts="1">
+          <properties>
+            <property name="Category" value="Functional Testing" />
+            <property name="Description" value="If there are more than 12 jobs there is a pagination component" />
+            <property name="Order" value="1" />
+          </properties>
+        </test-case>
+        <test-case id="0-1003" name="MyActiveJobsSectionTest2" fullname="GEAUITests.Test.MyActiveJobsSectionTest2" methodname="MyActiveJobsSectionTest2" classname="GEAUITests.Test" runstate="Runnable" seed="1922425128" result="Passed" start-time="2020-07-19 09:59:56Z" end-time="2020-07-19 09:59:58Z" duration="1.110016" asserts="1">
+          <properties>
+            <property name="Category" value="Functional Testing" />
+            <property name="Description" value="The number in the title reflects the total number of jobs" />
+            <property name="Order" value="2" />
+          </properties>
+        </test-case>
+        <test-case id="0-1004" name="MyActiveJobsSectionTest3" fullname="GEAUITests.Test.MyActiveJobsSectionTest3" methodname="MyActiveJobsSectionTest3" classname="GEAUITests.Test" runstate="Runnable" seed="9344845" result="Passed" start-time="2020-07-19 09:59:58Z" end-time="2020-07-19 10:00:01Z" duration="3.129333" asserts="1">
+          <properties>
+            <property name="Category" value="Functional Testing" />
+            <property name="Description" value="A new tab is opened with the job detail page after clicking on job link" />
+            <property name="Order" value="3" />
+          </properties>
+        </test-case>
+        <test-case id="0-1005" name="AddJobButtonTest" fullname="GEAUITests.Test.AddJobButtonTest" methodname="AddJobButtonTest" classname="GEAUITests.Test" runstate="Runnable" seed="577423323" result="Passed" start-time="2020-07-19 10:00:01Z" end-time="2020-07-19 10:00:01Z" duration="0.673991" asserts="1">
+          <properties>
+            <property name="Category" value="Functional Testing" />
+            <property name="Description" value="Add Job popup is shown after clicking Add Job button" />
+            <property name="Order" value="4" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
