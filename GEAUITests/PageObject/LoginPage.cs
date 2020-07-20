@@ -29,7 +29,8 @@ namespace GEAUITests.PageObject
         
         public void NavigateToDashboardPage()
         {
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.TitleIs("Iniciar sesión en la cuenta"));
             LoginTextBox.SendKeys("GeaTest@jllaccounts.onmicrosoft.com");
             SubmitButton.Click();
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.Id("idA_PWD_ForgotPassword")));
