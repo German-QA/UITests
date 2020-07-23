@@ -13,7 +13,6 @@ C:\Users\GermánLinares\source\repos\GEAUITests\bin\Debug\nunit.framework.pdb
 C:\Users\GermánLinares\source\repos\GEAUITests\bin\Debug\nunit.framework.xml
 C:\Users\GermánLinares\source\repos\GEAUITests\bin\Debug\WebDriver.xml
 C:\Users\GermánLinares\source\repos\GEAUITests\bin\Debug\WebDriver.Support.xml
-C:\Users\GermánLinares\source\repos\GEAUITests\obj\Debug\GEAUITests.csprojAssemblyReference.cache
 C:\Users\GermánLinares\source\repos\GEAUITests\obj\Debug\GEAUITests.csproj.CoreCompileInputs.cache
 C:\Users\GermánLinares\source\repos\GEAUITests\obj\Debug\GEAUITests.csproj.CopyComplete
 C:\Users\GermánLinares\source\repos\GEAUITests\obj\Debug\GEAUITests.dll

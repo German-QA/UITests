@@ -27,19 +27,21 @@ namespace GEAUITests.PageObject
 
         public IWebElement PasswdTextBox { get; set; }
         
-        public void NavigateToDashboardPage()
+        public DashboardPage NavigateToDashboardPage(string user, string pwd)
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.Name("loginfmt")));
-            LoginTextBox.SendKeys("GeaTest@jllaccounts.onmicrosoft.com");
+            LoginTextBox.SendKeys(user);
             SubmitButton.Click();
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.Id("idA_PWD_ForgotPassword")));
-            PasswdTextBox.SendKeys("TestGea2020jll+");
+            PasswdTextBox.SendKeys(pwd);
             Thread.Sleep(1000);
             SubmitButton.Click();
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.Id("idBtn_Back")));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.Name("DontShowAgain")));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("//input[@type='submit']")));
             SubmitButton.Click();
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.TitleIs("Gea"));
+            return new DashboardPage(driver);
         }
 
     }

@@ -52,7 +52,7 @@ namespace GEAUITests.PageObject
             SearchTextbox.SendKeys("Los ");
             Thread.Sleep(1000);
             SearchTextbox.SendKeys(Keys.Down + Keys.Enter);
-            Thread.Sleep(1000);
+            Thread.Sleep(5000);
             driver.SwitchTo().Window(driver.WindowHandles[1]);
             return new MapPage(driver);
         }
@@ -96,6 +96,34 @@ namespace GEAUITests.PageObject
             AddJobButton.Click();
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//*[@data-dismiss='modal']")));
+        }
+
+        public bool IsAddJobButtonPresent()
+        {
+
+            if (driver.FindElements(By.XPath("//*[@id='dashboard-addJob-section']/button/span[2]")).Count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
+        public bool IsForwardArrowPresent()
+        {
+
+            if (driver.FindElements(By.XPath("//*[@id='dashboard-myActiveJobs-section']/div[2]/div[1]/div/nav/ul/li[4]/a")).Count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
         }
 
     }

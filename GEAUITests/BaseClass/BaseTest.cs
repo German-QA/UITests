@@ -1,8 +1,6 @@
-﻿using GEAUITests.PageObject;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System;
 
 namespace GEAUITests.BaseClass
 {
@@ -11,7 +9,7 @@ namespace GEAUITests.BaseClass
 
         public IWebDriver driver;
         
-        [OneTimeSetUp]
+        [SetUp]
         public void Open()
         {
             ChromeOptions options = new ChromeOptions();
@@ -19,14 +17,13 @@ namespace GEAUITests.BaseClass
             driver = new ChromeDriver(options);
             driver.Navigate().GoToUrl("https://geadev.qrmjll.com/TalosArea/Dashboard");
             driver.Manage().Window.Maximize();
-            var loginPage = new LoginPage(driver);
-            loginPage.NavigateToDashboardPage();
         }
 
-        [OneTimeTearDown]
+        [TearDown]
         public void Close()
         {
             driver.Quit();
         }
+
     }
 }

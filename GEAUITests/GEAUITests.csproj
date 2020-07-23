@@ -51,11 +51,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseClass\BaseTest.cs" />
+    <Compile Include="DashboardTests\MyActiveJobsSection.cs" />
+    <Compile Include="DashboardTests\AddJobButton.cs" />
     <Compile Include="PageObject\LoginPage.cs" />
     <Compile Include="PageObject\ActiveJobPage.cs" />
     <Compile Include="PageObject\MapPage.cs" />
     <Compile Include="PageObject\DashboardPage.cs" />
-    <Compile Include="TestScripts\Test.cs" />
+    <Compile Include="DashboardTests\SearchBox.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
